@@ -15,3 +15,7 @@ use App\Http\Controllers\StaticPageController;
 */
 
 Route::get('/', [StaticPageController::class, 'home']);
+Route::get('trips', [StaticPageController::class, 'trips']);
+Route::get('trip/{id}', [StaticPageController::class, 'trip']);
+Route::get('aboutus', [StaticPageController::class, 'aboutus']);
+Route::get('contact', [StaticPageController::class, 'contact']);
