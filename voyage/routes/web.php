@@ -14,8 +14,12 @@ use App\Http\Controllers\StaticPageController;
 |
 */
 
-Route::get('/', [StaticPageController::class, 'home']);
-Route::get('trips', [StaticPageController::class, 'trips']);
+Route::get('/', [StaticPageController::class, 'home'])->name('home');
+Route::get('trips', [StaticPageController::class, 'trips'])->name('trips');
 Route::get('trip/{id}', [StaticPageController::class, 'trip']);
-Route::get('aboutus', [StaticPageController::class, 'aboutus']);
-Route::get('contact', [StaticPageController::class, 'contact']);
+Route::get('aboutus', function () {
+    return view("aboutus", ['viewName' => Route::currentRouteName()]);
+})->name('aboutus');
+Route::get('contact', function () {
+    return view("contact", ['viewName' => Route::currentRouteName()]);
+})->name('contact');

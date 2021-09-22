@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Martine</title>
+    <title>{{ env('APP_NAME') }} | {{ $viewName }}
+    </title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"><!--"css/bootstrap.min.css">-->
@@ -72,10 +73,10 @@
                                 id="navbarSupportedContent">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index.html">Home</a>
+                                        <a class="nav-link" href="{{ route('home')}}">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About</a>
+                                        <a class="nav-link" href="{{ route('aboutus')}}">About</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="packages.html">packages</a>
@@ -98,7 +99,7 @@
                                             pages
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                            <a class="dropdown-item" href="top_place.html">top place</a>
+                                            <a class="dropdown-item" href="{{ route('trips')}}">top place</a>
                                             <a class="dropdown-item" href="tour_details.html">tour details</a>
                                             <a class="dropdown-item" href="elements.html">Elements</a>
                                         </div>
