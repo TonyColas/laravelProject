@@ -83,6 +83,7 @@ class VoyageController extends Controller
         $voyage->date = $request->date;
         $voyage->cost = $request->cost;
         $voyage->organizer = $request->organizer;
+        $voyage->topPlace = $request->topPlace;
 
         $voyage->save();
     }

@@ -21,6 +21,7 @@ class CreateVoyagesTable extends Migration
             $table->date('date');
             $table->integer('cost');
             $table->string('organizer');
+            $table->integer('topPlace');
         });
     }
 

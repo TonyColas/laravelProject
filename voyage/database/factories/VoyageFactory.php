@@ -26,7 +26,8 @@ class VoyageFactory extends Factory
             'description' => $this->faker->text,
             'date' => $this->faker->date($format = 'Y-m-d'),
             'cost' => $this->faker->numberBetween($min = 50, $max = 2000),
-            'organizer' => $this->faker->name
+            'organizer' => $this->faker->name,
+            'topPlace' => 0
         ];
     }
 }

@@ -26,5 +26,10 @@
         <input type="text" name="organizer">
     </div>
 
+    <div class="mb-3">
+        <label class="form-label"> topPlace </label>
+        <input type="text" name="topPlace">
+    </div>
+
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
