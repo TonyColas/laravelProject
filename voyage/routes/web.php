@@ -17,7 +17,7 @@ use App\Http\Controllers\VoyageController;
 
 Route::get('/', [StaticPageController::class, 'home'])->name('home');
 Route::get('trips', [StaticPageController::class, 'trips'])->name('trips');
-Route::get('trip/{id}', [StaticPageController::class, 'trip']);
+Route::get('trip/{id}', [StaticPageController::class, 'trip'])->name('show_trip');
 Route::get('aboutus', function () {
     return view("aboutus", ['viewName' => Route::currentRouteName()]);
 })->name('aboutus');
@@ -31,5 +31,4 @@ Route::get('details', function () {
 Route::resources(['admin/voyages' => VoyageController::class]);
 
 //Route::get('admin/voyages', [VoyageController::class, 'index']);
-//Route::get('voyages/{id}/edit', [VoyageController::class, 'edit']);
 
