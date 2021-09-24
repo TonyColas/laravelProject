@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StaticPageController;
+use App\Http\Controllers\VoyageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,9 @@ Route::get('contact', function () {
 Route::get('details', function () {
     return view("details", ['viewName' => Route::currentRouteName()]);
 })->name('details');
+
+Route::resources(['admin/voyages' => VoyageController::class]);
+
+//Route::get('admin/voyages', [VoyageController::class, 'index']);
+//Route::get('voyages/{id}/edit', [VoyageController::class, 'edit']);
+

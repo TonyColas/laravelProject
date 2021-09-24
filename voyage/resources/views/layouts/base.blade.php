@@ -118,7 +118,6 @@
     </header>
     <!-- Header part end-->
 
-
     @yield('contents');
  
     <!-- footer part start-->
