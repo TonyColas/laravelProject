@@ -23,3 +23,6 @@ Route::get('aboutus', function () {
 Route::get('contact', function () {
     return view("contact", ['viewName' => Route::currentRouteName()]);
 })->name('contact');
+Route::get('details', function () {
+    return view("details", ['viewName' => Route::currentRouteName()]);
+})->name('details');

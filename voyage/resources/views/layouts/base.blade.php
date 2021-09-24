@@ -100,12 +100,12 @@
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
                                             <a class="dropdown-item" href="{{ route('trips')}}">top place</a>
-                                            <a class="dropdown-item" href="tour_details.html">tour details</a>
+                                            <a class="dropdown-item" href="{{ route('details')}}">tour details</a>
                                             <a class="dropdown-item" href="elements.html">Elements</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact</a>
+                                        <a class="nav-link" href="{{ route('contact')}}">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -118,23 +118,6 @@
     </header>
     <!-- Header part end-->
 
-    <!-- banner part start-->
-    <section class="banner_part">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-10">
-                    <div class="banner_text text-center">
-                        <div class="banner_text_iner">
-                            <h1> Saintmartine</h1>
-                            <p>Let’s start your journey with us, your dream will come true</p>
-                            <a href="#" class="btn_1">Discover Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- banner part start-->
 
     @yield('contents');
  
